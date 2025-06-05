@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer Registration Form</title>
+  <style>
+    /* CSS styles go here - copy this exact CSS inside */
+    .registration-container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px 30px;
+      border: 2px solid #0073e6;
+      border-radius: 10px;
+      background-color: #f9faff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .company-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .company-logo {
+      width: 80px;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    .registration-form h2 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    .registration-form label {
+      display: block;
+      margin-top: 12px;
+      font-weight: 600;
+      color: #003366;
+    }
+
+    .registration-form input {
+      width: 100%;
+      padding: 8px 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    .registration-form button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 12px;
+      background-color: #0073e6;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .registration-form button:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="registration-container">
+    <header class="company-header">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/31/Best_Buy_Logo.svg"
+        alt="Company Logo"
+        class="company-logo"
+      />
+      <h1>Best Buy</h1>
+    </header>
+
+    <form class="registration-form">
+      <h2>Customer Registration</h2>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
